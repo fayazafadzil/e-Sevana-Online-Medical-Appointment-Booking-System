@@ -1,0 +1,186 @@
+/* --- COMPLETE CSS STYLES FOR E-SEVANA (ATTRACTIVE COLORS ONLY) --- */
+
+/* 1. Body Styles (පසුබිම සුදු/ලා අළු) */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* ලා අළු පසුබිම */
+    color: #333;
+}
+
+/* Page Structure Styles */
+header {
+    background-color: #007bff; /* Primary Blue for Medical */
+    color: white;
+    padding: 1.5em 1em;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8em;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #0056b3;
+}
+
+main {
+    padding: 1em;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* 2. 🛑 Attractive Section Styling - ප්‍රධාන කොටස් වර්ණ ගැන්වීම 🛑 */
+/* Section වලට Box Shadow සහ Border Radius යොදයි */
+section {
+    padding: 2em 1em;
+    margin-bottom: 2em;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* පැහැදිලි සෙවනැල්ලක් */
+}
+
+/* Welcome to Your Health Hub (ID: home) - Light Mint Green */
+#home {
+    background-color: #d4edda; 
+    border-left: 8px solid #28a745; /* Green accent */
+}
+
+/* Our Specialist Doctors (ID: doctors) - Light Lavender/Blue */
+#doctors {
+    background-color: #e6f0ff; 
+    border-left: 8px solid #007bff; /* Blue accent */
+}
+
+/* Our Services (ID: services) - Light Peach/Yellow */
+#services {
+    background-color: #fff3cd; 
+    border-left: 8px solid #ffc107; /* Yellow accent */
+}
+
+/* Health & Wellness (ID: gallery) - Light Pink/Coral */
+#gallery {
+    background-color: #f8d7da;
+    border-left: 8px solid #dc3545; /* Red accent */
+}
+
+/* Book Your Slot (ID: booking) - Simple White */
+#booking {
+    background-color: white; 
+    border-left: 8px solid #6c757d; /* Grey accent */
+}
+
+/* 3. Images */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1em auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+/* 4. Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5em 0;
+    text-align: left;
+}
+
+th, td {
+    border: 1px solid #dee2e6;
+    padding: 12px;
+}
+
+th {
+    background-color: #c3d9ef;
+    color: #007bff;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+/* 5. List */
+ul {
+    list-style-type: none; 
+    padding: 0;
+}
+
+ul li {
+    background-color: transparent; 
+    margin-bottom: 8px;
+    padding: 10px;
+    border-left: 5px solid #0056b3;
+    border-radius: 4px;
+}
+
+/* 6. Animation */
+@keyframes flash {
+    0% { background-color: #ffc107; } 
+    50% { background-color: white; }
+    100% { background-color: #ffc107; }
+}
+
+#appointment-button {
+    display: block;
+    width: 80%;
+    max-width: 400px;
+    margin: 2em auto;
+    padding: 15px 20px;
+    background-color: #28a745; 
+    color: white;
+    text-align: center;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    animation: flash 3s infinite ease-in-out;
+}
+
+/* Media Query for Responsive Design */
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+    nav a {
+        padding: 0.8em 1.5em;
+    }
+    .img-grid {
+        grid-template-columns: repeat(5, 1fr); 
+    }
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+/* --- COMPLETE CSS STYLES END --- */
+
